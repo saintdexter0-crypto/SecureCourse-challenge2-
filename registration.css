@@ -383,3 +383,45 @@ body {
   margin-right: 15px;
   font-size: 14px;
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    z-index: 1000;
+    transition: left 0.3s ease;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+
+  .topbar {
+    padding: 15px 20px;
+  }
+
+  .registration-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .course-list {
+    gap: 10px;
+  }
+
+  .actions-column {
+    gap: 15px;
+  }
+}

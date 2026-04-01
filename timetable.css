@@ -290,3 +290,72 @@ body {
   color: #8b9bb4;
   margin-top: 2px;
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    z-index: 1000;
+    transition: left 0.3s ease;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+
+  .topbar {
+    padding: 15px 20px;
+  }
+
+  .content-area {
+    padding: 20px;
+  }
+
+  .timetable-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .date-selector {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .date-item {
+    padding: 10px 5px;
+  }
+
+  .class-list {
+    gap: 10px;
+  }
+
+  .class-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .class-time-group {
+    text-align: left;
+  }
+
+  .calendar-widget {
+    padding: 15px;
+  }
+
+  .calendar-days {
+    gap: 5px;
+  }
+}
