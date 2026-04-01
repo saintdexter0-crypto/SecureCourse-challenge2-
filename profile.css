@@ -343,11 +343,13 @@ border: 1px
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .app-container {
+    display: grid;
     flex-direction: column;
   }
 
-  .sidebar {
+  /* .sidebar {
     width: 100%;
+    height: auto;
     position: fixed;
     top: 0;
     left: -100%;
@@ -357,7 +359,7 @@ border: 1px
   }
 
   .sidebar.open {
-    left: 0;
+    left: 50px;
   }
 
   .main-content {
@@ -383,5 +385,5 @@ border: 1px
   .contact-grid {
     flex-direction: column;
     gap: 20px;
-  }
+  } */
 }
