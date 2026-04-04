@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SecureCourse Dashboard</title>
     <link rel="stylesheet" href="dashboardstyle.css">
     <link rel="icon" href="./image/secure_course_logo.png">
+    <script defer src="dashboard.js"></script>
 </head>
+
 <body>
     <!-- main container -->
     <div class="app-container">
@@ -36,12 +39,20 @@
                 </a>
             </nav>
         </aside>
+        <!-- Sidebar overlay for mobile -->
+        <div class="sidebar-overlay"></div>
         <!-- main content -->
         <main class="main-content">
             <header class="topbar">
-                <div class="spacer"></div> <div class="user-profile-section">
+                <button class="hamburger-menu" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="spacer"></div>
+                <div class="user-profile-section">
                     <button class="notification-btn"><img src="image/mdi_bell-badge-outline.png" alt=""></button>
-                    
+
                     <div class="profile-menu">
                         <img src="./image/profile-photo.png" alt="Avatar" class="avatar">
                         <div class="profile-info">
@@ -50,8 +61,10 @@
                         </div>
                         <span class="dropdown-arrow">⌄</span>
                         <div class="dropdown-content">
-                            <a href="#"><span><img src="./image/mdi_account-circle-outline.png" alt=""></span> Profile</a>
-                            <a href="#"><span><img src="image/mdi_password-outline.png" alt=""></span> Change Password</a>
+                            <a href="#"><span><img src="./image/mdi_account-circle-outline.png" alt=""></span>
+                                Profile</a>
+                            <a href="#"><span><img src="image/mdi_password-outline.png" alt=""></span> Change
+                                Password</a>
                             <div class="divider"></div>
                             <a href="#"><span><img src="image/material-symbols_logout.png" alt=""></span> Logout</a>
                         </div>
@@ -60,7 +73,7 @@
             </header>
 
             <div class="dashboard-content">
-                
+
                 <div class="page-header">
                     <h1>Dashboard</h1>
                     <span class="date">Thursday, May 16, 2024</span>
@@ -85,11 +98,11 @@
                 </section>
 
                 <section class="main-grid">
-                    
+
                     <div class="grid-column">
                         <div class="card classes-card">
                             <h2 class="card-title">Today's Classes</h2>
-                            
+
                             <h4 class="section-subtitle">Past</h4>
                             <div class="class-item absent">
                                 <div class="class-info">
@@ -141,7 +154,7 @@
                     </div>
 
                     <div class="grid-column">
-                        
+
                         <div class="card dark-card">
                             <h2 class="card-title text-white">Recent Activity</h2>
                             <ul class="activity-list">
@@ -160,7 +173,8 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <span class="act-icon"><img src="image/mdi_account-arrow-right-outline.png" alt=""></span>
+                                    <span class="act-icon"><img src="image/mdi_account-arrow-right-outline.png"
+                                            alt=""></span>
                                     <div class="act-details">
                                         <p>Requested Leave for Circuit Theory</p>
                                         <span>Yesterday, 01:00 PM</span>
@@ -171,10 +185,11 @@
 
                         <div class="card tasks-card">
                             <h2 class="card-title">Tasks</h2>
-                            
+
                             <h4 class="section-subtitle">Priority</h4>
                             <div class="task-item urgent">
-                                <span class="task-icon text-red"><img src="./image/zondicons_exclamation-solid.png" alt=""></span>
+                                <span class="task-icon text-red"><img src="./image/zondicons_exclamation-solid.png"
+                                        alt=""></span>
                                 <div class="task-details">
                                     <p class="text-red">Course Registration Pending</p>
                                     <span>May 13, 09:00 AM</span>
@@ -208,4 +223,5 @@
     </div>
 
 </body>
+
 </html>

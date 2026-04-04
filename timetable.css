@@ -198,6 +198,223 @@ body {
 
 .sub-section-title { font-size: 16px; margin-bottom: 20px; color: #1f2942; }
 
+/* ===== HAMBURGER MENU STYLING ===== */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: #1e3a8a;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.hamburger-menu:hover span {
+    background-color: #2563eb;
+}
+
+/* Sidebar overlay for mobile */
+.sidebar-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.sidebar-overlay.active {
+    display: block;
+}
+
+/* ===== MOBILE RESPONSIVENESS ===== */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .sidebar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 260px;
+        z-index: 1000;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        border-right: none;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar.active {
+        transform: translateX(0);
+    }
+
+    .topbar {
+        padding: 15px 20px;
+        gap: 10px;
+    }
+
+    .user-profile-section {
+        gap: 10px;
+    }
+
+    .avatar {
+        width: 35px;
+        height: 35px;
+    }
+
+    .profile-info {
+        display: none;
+    }
+
+    .dropdown-arrow {
+        display: none;
+    }
+
+    .content-area {
+        padding: 20px;
+    }
+
+    .page-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .timetable-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .sub-section-title {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .class-card {
+        padding: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .class-info {
+        flex: 1;
+    }
+
+    .course-title {
+        font-size: 14px;
+    }
+
+    .class-time {
+        font-size: 12px;
+    }
+
+    .dropdown-content {
+        position: fixed;
+        top: auto;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        border: none;
+        max-width: 100%;
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .dropdown-content.active {
+        transform: translateY(0);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile-menu:hover .dropdown-content {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 100%;
+    }
+
+    .hamburger-menu span {
+        width: 22px;
+    }
+
+    .topbar {
+        padding: 12px 15px;
+    }
+
+    .content-area {
+        padding: 15px;
+    }
+
+    .page-title {
+        font-size: 18px;
+    }
+
+    .date-selector {
+        justify-content: flex-start;
+        overflow-x: auto;
+        gap: 8px;
+    }
+
+    .date-item {
+        min-width: 60px;
+        padding: 12px 5px;
+        font-size: 14px;
+    }
+
+    .date-item span {
+        font-size: 16px;
+    }
+
+    .card {
+        padding: 12px;
+    }
+
+    .class-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .course-code {
+        font-size: 11px;
+    }
+
+    .course-title {
+        font-size: 13px;
+    }
+
+    .location {
+        font-size: 11px;
+    }
+
+    .notification-btn {
+        font-size: 18px;
+    }
+}
+
 .class-list { display: flex; flex-direction: column; gap: 15px; }
 .class-card {
   display: flex; justify-content: space-between; align-items: center;

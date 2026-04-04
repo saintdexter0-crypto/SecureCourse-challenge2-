@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,57 +8,67 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="./image/secure_course_icon.png">
   <link rel="stylesheet" href="registration.css">
+  <script defer src="registration.js"></script>
 </head>
+
 <body>
-    <!-- main container -->
-    <div class="app-container">
-        <aside class="sidebar">
-            <div class="brand">
-              <div class="brand-icon">
-                <img src="./image/secure_course_logo.png" alt="logo">
-              </div>
-              <h2>SecureCourse</h2>
+  <!-- main container -->
+  <div class="app-container">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">
+          <img src="./image/secure_course_logo.png" alt="logo">
+        </div>
+        <h2>SecureCourse</h2>
+      </div>
+      <!-- side bar -->
+      <nav class="sidebar-nav">
+        <a href="dashboard.html" class="nav-item">
+          <span class="icon"><img src="./image/symbols_dashboard.png" alt=""></span> Dashboard
+        </a>
+        <a href="./profile.html" class="nav-item">
+          <span class="icon"><img src="./image/mdi_account-circle-outline.png" alt=""></span> Profile
+        </a>
+        <a href="./registration.html" class="nav-item active">
+          <span class="icon"><img src="./image/registration.png" alt=""></span> Registration
+        </a>
+        <a href="./timetable.html" class="nav-item">
+          <span class="icon"><img src="./image/mdi_timetable.png" alt=""></span> Timetable
+        </a>
+        <a href="./attendance.html" class="nav-item">
+          <span class="icon"><img src="image/mdi_account-check-outline.png" alt=""></span> Attendance
+        </a>
+      </nav>
+    </aside>
+    <!-- Sidebar overlay for mobile -->
+    <div class="sidebar-overlay"></div>
+    <!-- main content -->
+    <main class="main-content">
+      <header class="topbar">
+        <button class="hamburger-menu" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="spacer"></div>
+        <div class="user-profile-section">
+          <button class="notification-btn"><img src="image/mdi_bell-badge-outline.png" alt=""></button>
+          <div class="profile-menu">
+            <img src="./image/profile-photo.png" alt="Avatar" class="avatar">
+            <div class="profile-info">
+              <span class="name">Kelvin Yeboah</span>
+              <span class="role">Student</span>
             </div>
-            <!-- side bar -->
-            <nav class="sidebar-nav">
-              <a href="dashboard.html" class="nav-item">
-                <span class="icon"><img src="./image/symbols_dashboard.png" alt=""></span> Dashboard
-              </a>
-              <a href="./profile.html" class="nav-item">
-                <span class="icon"><img src="./image/mdi_account-circle-outline.png" alt=""></span> Profile
-              </a>
-              <a href="./registration.html" class="nav-item active">
-                <span class="icon"><img src="./image/registration.png" alt=""></span> Registration
-              </a>
-              <a href="./timetable.html" class="nav-item">
-                <span class="icon"><img src="./image/mdi_timetable.png" alt=""></span> Timetable
-              </a>
-              <a href="./attendance.html" class="nav-item">
-                <span class="icon"><img src="image/mdi_account-check-outline.png" alt=""></span> Attendance
-              </a>
-            </nav>
-        </aside>
-        <!-- main content -->
-      <main class="main-content">
-        <header class="topbar">
-            <div class="spacer"></div> <div class="user-profile-section">
-                <button class="notification-btn"><img src="image/mdi_bell-badge-outline.png" alt=""></button>   
-                  <div class="profile-menu">
-                    <img src="./image/profile-photo.png" alt="Avatar" class="avatar">
-                    <div class="profile-info">
-                      <span class="name">Kelvin Yeboah</span>
-                      <span class="role">Student</span>
-                    </div>
-                    <span class="dropdown-arrow">⌄</span>
-                    <div class="dropdown-content">
-                      <a href="#"><span><img src="./image/mdi_account-circle-outline.png" alt=""></span> Profile</a>
-                      <a href="#"><span><img src="image/mdi_password-outline.png" alt=""></span> Change Password</a>
-                      <div class="divider"></div>
-                      <a href="#"><span><img src="image/material-symbols_logout.png" alt=""></span> Logout</a>
-                    </div>
-                  </div>
-              </div>
-          </header>
+            <span class="dropdown-arrow">⌄</span>
+            <div class="dropdown-content">
+              <a href="#"><span><img src="./image/mdi_account-circle-outline.png" alt=""></span> Profile</a>
+              <a href="#"><span><img src="image/mdi_password-outline.png" alt=""></span> Change Password</a>
+              <div class="divider"></div>
+              <a href="#"><span><img src="image/material-symbols_logout.png" alt=""></span> Logout</a>
+            </div>
+          </div>
+        </div>
+      </header>
       <div class="content-area">
         <h1 class="page-title">Registration</h1>
         <div class="registration-grid">
@@ -173,4 +184,5 @@
   </div>
 
 </body>
+
 </html>
