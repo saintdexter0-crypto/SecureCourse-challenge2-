@@ -370,9 +370,8 @@ body {
 
     .notification-btn {
         font-size: 18px;
+        gap: 30px;
     }
-}
-    gap: 30px;
 }
 
 /* --- Date Selector --- */

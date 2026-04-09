@@ -481,7 +481,9 @@ body {
 
 /* Responsive adjustments */
 @media(max-width: 1024px){
-    .main-grid{grid-template-columns: 1fr;}
+    .main-grid{grid-template-columns: 1fr;
+    overflow: hidden;
+}
 }
 
 @media (max-width: 768px) {
