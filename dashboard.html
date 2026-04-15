@@ -7,7 +7,6 @@
     <title>SecureCourse Dashboard</title>
     <link rel="stylesheet" href="dashboardstyle.css">
     <link rel="icon" href="./image/secure_course_logo.png">
-    <script defer src="dashboard.js"></script>
 </head>
 
 <body>
@@ -34,21 +33,15 @@
                 <a href="./timetable.html" class="nav-item">
                     <span class="icon"><img src="./image/mdi_timetable.png" alt=""></span> Timetable
                 </a>
-                <a href="./attendance.html" class="nav-item">
+                <a href="#" class="nav-item">
                     <span class="icon"><img src="image/mdi_account-check-outline.png" alt=""></span> Attendance
                 </a>
             </nav>
         </aside>
-        <!-- Sidebar overlay for mobile -->
-        <div class="sidebar-overlay"></div>
         <!-- main content -->
         <main class="main-content">
             <header class="topbar">
-                <button class="hamburger-menu" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+                <button class="hamburger-btn">☰</button>
                 <div class="spacer"></div>
                 <div class="user-profile-section">
                     <button class="notification-btn"><img src="image/mdi_bell-badge-outline.png" alt=""></button>
@@ -222,6 +215,7 @@
         </main>
     </div>
 
+    <script src="responsive.js"></script>
 </body>
 
 </html>
